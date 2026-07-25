@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NovaCore AI</title>
+    <style>
+        body {
+            background: #0b1020;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        input {
+            width: 300px;
+            height: 35xp;
+            border-radius: 8xp;
+            border: none;
+            padding: 5px;
+        }
+
+        .box {
+            margin-top: 50px;
+        }
+
+        #reply {
+            margin-top: 20px;
+            color: #00ffcc;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🤖NovaCore AI Web</h1>
+    <p>Ask your AI assistant</p>
+
+    <input id"user" placeholder="Ask NovaCore..." >
+    <button onclick="send()">Send</button>
+
+    <b id="reply"></p>
+
+        <script>
+            async function send() {
+
+                let user =
+                    document.getElementsByNId("user").value;
+
+                let res = await fetch("/ask", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body: "user=" + encodeURIComponent(userMessage)
+                });
+                let data = await res.json();
+
+                document.getElementBy("reply").innerText = data.reply;
+            }
+
+        </script>
+
+</body>
+
+</html>
