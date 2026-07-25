@@ -44,16 +44,16 @@
             async function send() {
 
                 let user =
-                    document.getElementsByNId("user").value;
+                    document.getElementById("user").value;
 
                 let res = await fetch("/ask", {
                     method: "POST",
                     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                    body: "user=" + encodeURIComponent(userMessage)
+                    body: "user=" + encodeURIComponent(user)
                 });
                 let data = await res.json();
 
-                document.getElementBy("reply").innerText = data.reply;
+                document.getElementByid("reply").innerText = data.reply;
             }
 
         </script>
