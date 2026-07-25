@@ -47,7 +47,7 @@ def think(user):
         
     if user.startswith("wiki"):
         query=user.replace("wiki","")
-        return wikipedia.summary("query,sentences=2")
+        return wikipedia.summary(query,sentences=2)
 
     if user.startswith("create file"):
         filename = user.replace("create file", "")
