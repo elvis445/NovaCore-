@@ -17,7 +17,7 @@ def home():
 
 @app.route("/ask", methods=["POST"])
 def ask():
-    user = request.form['user']
+    user = request.form.get("user","")
     answer = think(user)
     return {"reply": answer}
 
