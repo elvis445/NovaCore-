@@ -4,7 +4,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request,jsonify
 from brain.thinker import think
 
 app = Flask(__name__)
@@ -19,7 +19,7 @@ def home():
 def ask():
     user = request.form.get("user","")
     answer = think(user)
-    return {"reply": answer}
+    return jsonify({"reply": answer})
 
 
 if __name__ == "__main__":
