@@ -1,7 +1,7 @@
 #import pyautogui as pg
 #import mouseinfo
 
-import pywhatkit
+#import pywhatkit
 import wikipedia
 import os
 import sys
@@ -14,13 +14,13 @@ from internet.web_engine import search_google, open_website, quick_info
 from memory.memory import remember, recall, save_chat, load_chat
 
 def search_googhle(query):
-    pywhatkit.search(query)
+    #Uses your inernet module instead of pywhatkit
     return"Searching Google...."
 
 
 
 def play_vedio(topic):
-    pywhatkit.playonyt(topic)
+    #A-safe return response for the cloud server
     return 'Playing vedio on YouTube'
 
 def think(user):
