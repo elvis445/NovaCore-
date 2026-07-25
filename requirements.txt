@@ -4,3 +4,4 @@ gunicorn
 werkzeug
 wikipedia
 beautifulsoup4
+pywhatkit
