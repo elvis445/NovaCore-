@@ -3,7 +3,7 @@
 def smart_reply(user): 
     user = user.lower().strip()
 
-    if "hello" in ['hi',"hello","hey"]
+    if "hello" in ['hi',"hello","hey"]:
         return "Hello! Nice to meet you today?  ."
 
     if "how are you" in user:
