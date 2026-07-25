@@ -12,6 +12,7 @@ from plugins.calculator import calculate
 from engine.files import create_file, read_file, delete_file
 from internet.web_engine import search_google, open_website, quick_info
 from memory.memory import remember, recall, save_chat, load_chat
+from brain.smart import smart_reply
 
 def search_googhle(query):
     #Uses your inernet module instead of pywhatkit
@@ -110,4 +111,4 @@ def think(user):
         if user in chat['user']:
             return chat["bot"]
 
-    return "I am not fully sure yet,but I am larning.Try teaching me or reprasing your question "
+    return smart_reply(user)
