@@ -27,4 +27,12 @@ def search_knowledge(text):
     if "what is photosynthesis" in text:
         return "Photosynthesis is the process where plants make food using sunlight."
 
+    if "founder biography" in text or "who is elvis" in text or "what is your founder biography" in text:
+    return """Elvis is a young student from Ghana with a strong passion for technology, programming, and artificial intelligence. He enjoys learning Python, building software, and exploring how AI can solve real-world problems.
+
+He is the founder of NovaCore AI, a project focused on creating an intelligent assistant that helps users learn, answer questions, and perform useful tasks through both web and desktop applications.
+
+Elvis believes that learning never stops. His goal is to continue improving NovaCore AI into a powerful and innovative AI platform that can help people around the world.
+
+Mission: To build intelligent technology that makes learning easier and inspires others to create amazing software."""
     return None
