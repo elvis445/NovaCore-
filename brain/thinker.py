@@ -1,3 +1,6 @@
+#import pyautogui as pg
+#import mouseinfo
+
 import pywhatkit
 import wikipedia
 import os
