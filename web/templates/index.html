@@ -1,63 +1,90 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta name="google-site-verification" content="Z-qMv1Doxao-JIzNPVxfMQ4mdccS_s_t2QHa1lGNesg" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovaCore AI</title>
-    <style>
-        body {
-            background: #0b1020;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
 
-        input {
-            width: 300px;
-            height: 35xp;
-            border-radius: 8xp;
-            border: none;
-            padding: 5px;
-        }
-
-        .box {
-            margin-top: 50px;
-        }
-
-        #reply {
-            margin-top: 20px;
-            color: #00ffcc;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
-    <h1>🤖NovaCore AI Web</h1>
-    <p>Ask your AI assistant</p>
 
-    <input type="text" id="user" placeholder="Ask NovaCore..." >
-    <button onclick="send()">Send</button>
+<!-- Sidebar -->
+<div class="sidebar">
 
-    <b id="reply"></p>
+    <div class="logo">
+        🤖 NovaCore
+    </div>
 
-        <script>
-            async function send() {
+    <button class="new-chat">
+        + New Chat
+    </button>
 
-                let user =
-                    document.getElementById("user").value;
+    <div class="menu">
+        <a href="#">💬 Chats</a>
+        <a href="#">🧠 Memory</a>
+        <a href="#">📂 Files</a>
+        <a href="#">⚙ Settings</a>
+        <a href="#">ℹ About</a>
+    </div>
 
-                let res = await fetch("/ask", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                    body: "user=" + encodeURIComponent(user)
-                });
-                let data = await res.json();
+</div>
 
-                document.getElementById("reply").innerText = data.reply;
-            }
+<!-- Main Area -->
+<div class="main">
 
-        </script>
+    <!-- Header -->
+    <div class="header">
+
+        <h2>NovaCore AI</h2>
+
+        <div class="profile">
+            👤
+        </div>
+
+    </div>
+
+    <!-- Chat -->
+    <div id="chat-box">
+
+        <div class="bot-message">
+            👋 Welcome to NovaCore AI.
+            <br><br>
+            Ask me anything...
+        </div>
+
+    </div>
+
+    <!-- Input -->
+    <div class="input-area">
+
+        <button id="voice-btn">
+            🎤
+        </button>
+
+        <input
+            id="user-input"
+            type="text"
+            placeholder="Message NovaCore..."
+        >
+
+        <button id="upload-btn">
+            📎
+        </button>
+
+        <button
+            id="send-btn"
+            onclick="sendMessage()"
+        >
+            ➤
+        </button>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
 
 </body>
-
 </html>
