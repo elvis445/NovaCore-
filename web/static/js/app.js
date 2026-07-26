@@ -1,29 +1,23 @@
-function sendMessage() {
+async function sendMessage() {
 
     let input = document.getElementById("user-input");
-
-    let chat = document.getElementById("chat-box");
-
     let message = input.value.trim();
 
-    if(message === "") return;
+    if (message === "") return;
 
-    chat.innerHTML += `
-        <div class="user-message">${message}</div>
-    `;
+    let formData = new FormData();
+    formData.append("user", message);
+
+    let response = await fetch("/ask", {
+        method: "POST",
+        body: formData
+    });
+
+    let data = await response.json();
+
+    document.getElementById("chat-box").innerHTML +=
+        "<div class='user-message'>" + message + "</div>" +
+        "<div class='bot-message'>" + data.reply + "</div>";
 
     input.value = "";
-
-    setTimeout(function(){
-
-        chat.innerHTML += `
-            <div class="bot-message">
-                NovaCore is still learning...
-            </div>
-        `;
-
-        chat.scrollTop = chat.scrollHeight;
-
-    },1000);
-
 }
