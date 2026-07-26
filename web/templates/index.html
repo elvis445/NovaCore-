@@ -12,25 +12,40 @@
 
 <body>
 
-<!-- Sidebar -->
-<div class="sidebar">
+<header class="top-bar">
 
-    <div class="logo">
-        <img src="{{url_for("static",filename="assets/logos/novacore_logo.png")}}"alt'NovaCore Logo">
-        🤖 NovaCore
-    </div>
-
-    <button class="new-chat">
-        + New Chat
+    <button id="menu-btn" onclick="toggleMenu()">
+        ☰
     </button>
 
-    <div class="menu">
-        <a href="#">💬 Chats</a>
-        <a href="#">🧠 Memory</a>
-        <a href="#">📂 Files</a>
-        <a href="#">⚙ Settings</a>
-        <a href="#">ℹ About</a>
+    <div class="logo">
+        <img src="{{ url_for('static', filename='assets/logos/novacore_logo.png') }}" alt="NovaCore Logo">
+        <span>NovaCore AI</span>
     </div>
+
+</header>
+
+<div id="sidebar" class="sidebar">
+
+    <button class="new-chat">+ New Chat</button>
+
+    <a href="#">💬 Chat History</a>
+
+    <a href="#">🧠 Memory</a>
+
+    <a href="#">📁 Files</a>
+
+    <a href="#">🌐 Browser</a>
+
+    <a href="#">🎤 Voice</a>
+
+    <a href="#">⚙ Settings</a>
+
+    <a href="#">👤 Profile</a>
+
+    <a href="#">ℹ About</a>
+
+</div>
 
 </div>
 
