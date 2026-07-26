@@ -105,9 +105,9 @@ def think(user):
         if len(cleaned.split()) <= 3:
             return quick_info(cleaned)
 
-    chat_history = load_chat
+    chat_history = load_chat()
 
-    for chat in chat_history[-10]:
+    for chat in chat_history[-10:]:
         if user in chat['user']:
             return chat["bot"]
 
