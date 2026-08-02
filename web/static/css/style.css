@@ -241,15 +241,14 @@ button:active{
 
 .sidebar {
     position: fixed;
-    top: 0;
+    top: 60px;
     left: -280px;
     width: 260px;
-    height: 100%;
+    height: calc(100% - 60px);
     background: #111827;
     padding: 20px;
-    transition: 0.3s ease;
+    transition: left 0.3s ease;
     z-index: 1000;
-    box-shadow: 5px 0 20px rgba(0,0,0,0.3);
 }
 
 .sidebar.open {
