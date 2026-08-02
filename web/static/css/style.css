@@ -1,4 +1,55 @@
 /* ========================= */
+/* NovaCore Mobile Design */
+/* ========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    .top-bar {
+        height: 60px;
+        padding: 10px;
+    }
+
+    #menu-btn {
+        font-size: 24px;
+    }
+
+    .logo img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .logo span {
+        font-size: 18px;
+    }
+
+    .sidebar {
+        width: 230px;
+    }
+
+    .chat-box {
+        padding: 10px;
+        height: calc(100vh - 130px);
+    }
+
+    .input-area {
+        width: 100%;
+        padding: 10px;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+}
+/* ========================= */
 /* NovaCore AI - Style.css   */
 /* ========================= */
 
