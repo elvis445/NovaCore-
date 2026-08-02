@@ -228,3 +228,50 @@ button:active{
     transform:scale(.95);
 
 }
+/* NovaCore Sidebar Menu */
+
+#menu-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 260px;
+    height: 100%;
+    background: #111827;
+    padding: 20px;
+    transition: 0.3s ease;
+    z-index: 1000;
+    box-shadow: 5px 0 20px rgba(0,0,0,0.3);
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar a,
+.new-chat {
+    display: block;
+    color: white;
+    text-decoration: none;
+    background: #1f2937;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sidebar a:hover,
+.new-chat:hover {
+    background: #2563eb;
+}
+    
