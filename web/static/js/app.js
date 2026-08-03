@@ -31,3 +31,20 @@ function toggleMenu() {
     sidebar.classList.toggle("open");
 
 }
+// Register Service Worker
+
+if ("serviceWorker" in navigator) {
+
+    window.addEventListener("load", function () {
+
+        navigator.serviceWorker.register("/static/sw.js")
+            .then(function (registration) {
+                console.log("Service Worker registered successfully!");
+            })
+            .catch(function (error) {
+                console.log("Service Worker registration failed:", error);
+            });
+
+    });
+
+}
