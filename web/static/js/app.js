@@ -48,3 +48,19 @@ if ("serviceWorker" in navigator) {
     });
 
 }
+function showMemory() {
+    alert(
+        "🧠 NovaCore Memory\n\n" +
+        "No memories saved yet.\n\n" +
+        "Soon NovaCore will remember your conversations, preferences, and projects."
+    );
+}
+
+function showInfo() {
+    alert(
+        "🤖 NovaCore AI\n\n" +
+        "Version: 1.0\n" +
+        "Developer: Elvis\n\n" +
+        "NovaCore is your intelligent AI assistant for learning, coding, research, and daily tasks."
+    );
+}
