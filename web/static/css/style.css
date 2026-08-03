@@ -338,3 +338,22 @@ button:active{
     color:#00e5ff;
     margin-bottom:15px;
 }
+.page-content{
+    display:none;
+    background:#1e1e2f;
+    color:white;
+    margin:20px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+
+.page-content h2{
+    color:#4fc3f7;
+    margin-bottom:15px;
+}
+
+.page-content p{
+    line-height:1.6;
+    color:#dddddd;
+}
