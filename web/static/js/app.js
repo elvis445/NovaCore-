@@ -74,3 +74,23 @@ function showInfo(){
     `;
 
 }
+
+function openPage(title, content) {
+    document.getElementById("page-content").style.display = "block";
+    document.getElementById("page-title").innerText = title;
+    document.getElementById("page-body").innerHTML = content;
+}
+
+function showMemory() {
+    openPage(
+        "🧠 NovaCore Memory",
+        "<p>Your saved memories will appear here.</p>"
+    );
+}
+
+function showInfo() {
+    openPage(
+        "ℹ About NovaCore",
+        "<p><b>NovaCore AI</b><br>Developer: Elvis<br>Version: 1.0</p>"
+    );
+}
