@@ -48,19 +48,29 @@ if ("serviceWorker" in navigator) {
     });
 
 }
-function showMemory() {
-    alert(
-        "🧠 NovaCore Memory\n\n" +
-        "No memories saved yet.\n\n" +
-        "Soon NovaCore will remember your conversations, preferences, and projects."
-    );
+
+function showMemory(){
+
+    document.getElementById("page-content").style.display="block";
+    document.getElementById("page-title").innerHTML="🧠 NovaCore Memory";
+
+    document.getElementById("page-body").innerHTML=`
+        <p>No memories have been saved yet.</p>
+        <p>Future versions will remember conversations, projects, and preferences.</p>
+    `;
+
 }
 
-function showInfo() {
-    alert(
-        "🤖 NovaCore AI\n\n" +
-        "Version: 1.0\n" +
-        "Developer: Elvis\n\n" +
-        "NovaCore is your intelligent AI assistant for learning, coding, research, and daily tasks."
-    );
+function showInfo(){
+
+    document.getElementById("page-content").style.display="block";
+    document.getElementById("page-title").innerHTML="🤖 About NovaCore";
+
+    document.getElementById("page-body").innerHTML=`
+        <h3>NovaCore AI</h3>
+        <p><b>Version:</b> 1.0</p>
+        <p><b>Developer:</b> Elvis</p>
+        <p>NovaCore is an intelligent AI assistant built to help with coding, learning, research, and everyday tasks.</p>
+    `;
+
 }
