@@ -36,7 +36,7 @@
 
     <a href="#">💬 Chat History</a>
 
-    <a href="#"onclick="showMemory()">🧠 Memory</a>
+    <a href="#" onclick="showMemory()">🧠 Memory</a>
 
     <a href="#">📁 Files</a>
 
@@ -48,15 +48,11 @@
 
     <a href="#">👤 Profile</a>
 
-    <a href="#"onclick="showInfo()">ℹ About</a>
+    <a href="#" onclick="showInfo()">ℹ About</a>
 </div>
 
 <!-- Main Area -->
 <div class="main">
-<div id="page-content" class="page-content" style="display:none;">
-    <h2 id="page-title"></h2>
-    <div id="page-body"></div>
-</div>
 
     <!-- Header -->
     <div class="header">
@@ -110,5 +106,10 @@
 
 <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 
+<div id="page-content" style="display:none;">
+    <h2 id="page-title"></h2>
+    <div id="page-body"></div>
+</div>
+    
 </body>
 </html>
