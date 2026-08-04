@@ -78,7 +78,18 @@ function showInfo(){
 function openPage(title, content) {
     document.getElementById("page-content").style.display = "block";
     document.getElementById("page-title").innerText = title;
-    document.getElementById("page-body").innerHTML = content;
+    
+    document.getElementById("page-body").innerHTML = 
+        <div style="text-align:right;margin-bottom:20px,">
+            <button onclick ="document.getElementById("page-content").style.display="none'"
+                    style ="background:#1f2937;color:white;border:none;padding:10px 20px;border-radius:8px;cursor:pointer;font-size:16x;">
+                Close
+        </button>
+        </div>
+        <div style="font-size:18x;line-height:1.6,:>
+            ${content}
+    </div>
+        
 }
 
 function showMemory() {
