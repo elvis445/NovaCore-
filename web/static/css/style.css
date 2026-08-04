@@ -302,8 +302,9 @@ button:active{
     z-index: 1000;
 }
 
-.sidebar.open {
-    left: 0;
+#sidebar.open {
+    display:block !important
+    left: 0 !important;
 }
 
 .sidebar a,
