@@ -303,7 +303,7 @@ button:active{
 }
 
 #sidebar.open {
-    display:block !important
+    display: block !important;
     left: 0 !important;
 }
 
@@ -326,7 +326,6 @@ button:active{
     background: #2563eb;
 }
 
-}
 #page-content{
     display:none;
     position:fixed !important;
