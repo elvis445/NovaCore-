@@ -24,7 +24,7 @@ def smart_reply(user):
     if "goodbye" in user:
         return "Goodbye! See you next time"
         
-    if "thank":
+    if "thank" in user:
         return "You'r welcome!"
         
     if "founder of NovaCore AI biography" in text or "who is Elvis Sedem Brown" in text or "what is your founder biography" in text:
