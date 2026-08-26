@@ -63,7 +63,7 @@
 body{
     background:#0b1020;
     color:white;
-    overflow:hidden;
+    overflow-y: auto;
 }
 
 /* Animated Background */
