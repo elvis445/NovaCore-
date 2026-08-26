@@ -22,19 +22,18 @@ async function sendMessage() {
     input.value = "";
 }
 
+
 // NovaCore Sidebar Toggle
 
 function toggleMenu() {
 
-    console.log("MENU BUTTON CLICKED");
-
     const sidebar = document.getElementById("sidebar");
-
-    console.log("Sidebar:", sidebar);
 
     sidebar.classList.toggle("open");
 
 }
+
+
 // Register Service Worker
 
 if ("serviceWorker" in navigator) {
@@ -53,6 +52,8 @@ if ("serviceWorker" in navigator) {
 
 }
 
+
+// Open a NovaCore page/panel
 
 function openPage(title, content) {
 
@@ -75,16 +76,26 @@ function openPage(title, content) {
     `;
 }
 
+
+// Memory page
+
 function showMemory() {
+
     openPage(
         "🧠 NovaCore Memory",
         "<p>Your saved memories will appear here.</p>"
     );
+
 }
 
+
+// About page
+
 function showInfo() {
+
     openPage(
         "ℹ About NovaCore",
         "<p><b>NovaCore AI</b><br>Developer: Elvis<br>Version: 1.0</p>"
     );
+
 }
