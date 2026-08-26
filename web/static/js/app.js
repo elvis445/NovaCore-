@@ -26,7 +26,11 @@ async function sendMessage() {
 
 function toggleMenu() {
 
+    console.log("MENU BUTTON CLICKED");
+
     const sidebar = document.getElementById("sidebar");
+
+    console.log("Sidebar:", sidebar);
 
     sidebar.classList.toggle("open");
 
