@@ -73,7 +73,7 @@ def think(user):
         return "Opening"+site
     
     elif user.startswith("play "):
-        topic=user.eplace("play","")
+        topic=user.replace("play","")
         return play_vedio(topic)
 
     if user.startswith("remember"):
