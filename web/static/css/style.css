@@ -217,6 +217,7 @@ body{
     padding:18px;
 
     border-top:1px solid rgba(255,255,255,.08);
+    flex-shrink:0;
 
 }
 
