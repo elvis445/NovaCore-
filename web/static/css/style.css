@@ -155,6 +155,7 @@ body{
     max-width:900px;
     margin:100px auto 0;
     height:80vh;
+    min-height:0;
     display:flex;
     flex-direction:column;
     background:rgba(255,255,255,.05);
