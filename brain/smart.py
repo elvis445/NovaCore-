@@ -27,7 +27,7 @@ def smart_reply(user):
     if "thank" in user:
         return "You'r welcome!"
         
-    if "founder of NovaCore AI biography" in text or "who is Elvis Sedem Brown" in text or "what is your founder biography" in text:
+    if "founder of NovaCore AI biography" in user or "who is Elvis Sedem Brown" in user or "what is your founder biography" in user:
         return """Elvis is a young student from Ghana with a strong passion for technology, programming, and artificial intelligence. He enjoys learning Python, building software, and exploring how AI can solve real-world problems.
 
 He is the founder of NovaCore AI, a project focused on creating an intelligent assistant that helps users learn, answer questions, and perform useful tasks through both web and desktop applications.
