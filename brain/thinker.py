@@ -105,10 +105,11 @@ def think(user):
         if len(cleaned.split()) <= 3:
             return quick_info(cleaned)
             
-    knowledge_response = search_knowledge(user)
+     knowledge_response = search_knowledge(user)
 
     if knowledge_response is not None:
-        return knowledge_response
+        return knowledge_response       
+   
         
     chat_history = load_chat()
 
