@@ -98,14 +98,20 @@ def think(user):
     elif "time" in user:
         return "The time is"+get_time()
   
-
     elif "who is" in user or "what is" in user:
+        knowledge_response = search_knowledge(user)
+    
+        if knowledge_response is not None:
+            return knowledge_response
+    
         cleaned = user.replace("who is", "")
         cleaned = cleaned.replace("what is", "").strip()
+    
         if len(cleaned.split()) <= 3:
             return quick_info(cleaned)
+       
             
-     knowledge_response = search_knowledge(user)
+    knowledge_response = search_knowledge(user)
 
     if knowledge_response is not None:
         return knowledge_response       
