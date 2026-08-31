@@ -104,7 +104,12 @@ def think(user):
         cleaned = cleaned.replace("what is", "").strip()
         if len(cleaned.split()) <= 3:
             return quick_info(cleaned)
+            
+    knowledge_response = search_knowledge(user)
 
+    if knowledge_response is not None:
+        return knowledge_response
+        
     chat_history = load_chat()
 
     for chat in chat_history[-10:]:
