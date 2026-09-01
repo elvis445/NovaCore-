@@ -14,7 +14,7 @@ async function sendMessage() {
     });
 
     let data = await response.json();
-
+    console.log("NovaCore reply:", data.reply);
     document.getElementById("chat-box").innerHTML +=
         "<div class='user-message'>" + message + "</div>" +
         "<div class='bot-message'>" + data.reply + "</div>";
