@@ -123,4 +123,5 @@ def think(user):
         if user in chat['user']:
             return chat["bot"]
 
-    return smart_reply(user)
+    return "DEBUG: " + 
+    str(smart_reply(user))
