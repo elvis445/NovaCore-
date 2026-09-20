@@ -119,12 +119,12 @@ def think(user):
 
     if knowledge_response is not None:
         return knowledge_response       
-   
-        
-    chat_history = load_chat()
+       chat_history = load_chat()
 
     for chat in chat_history[-10:]:
         if user in chat['user']:
             return chat["bot"]
 
-        return ask_ai(user)
+    return ask_ai(user)
+        
+    
