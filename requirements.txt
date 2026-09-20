@@ -5,3 +5,4 @@ werkzeug
 wikipedia
 beautifulsoup4
 openai
+google-genai
