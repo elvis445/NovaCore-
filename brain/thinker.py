@@ -27,7 +27,7 @@ def play_vedio(topic):
 def think(user):
     user = user.lower()
 
-        if user in ["hi", "hello", "hey"]:
+    if user in ["hi", "hello", "hey"]:
         return "Hello! I am NovaCore."
 
     if user.startswith("learn"):
