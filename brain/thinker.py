@@ -124,4 +124,4 @@ def think(user):
             return chat["bot"]
 
     return "DEBUG: " + 
-    str(smart_reply(user))
+str(smart_reply(user))
