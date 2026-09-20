@@ -3,7 +3,6 @@ def smart_reply(user):
 
     if user in ["hi", "hello", "hey"]:
         return "Hello! Nice to meet you today."
-
     if "how are you" in user:
         return "I am doing well, thank you for asking."
 
