@@ -115,16 +115,15 @@ def think(user):
             return quick_info(cleaned)
        
             
-    knowledge_response = search_knowledge(user)
+        knowledge_response = search_knowledge(user)
 
     if knowledge_response is not None:
-        return knowledge_response       
-       chat_history = load_chat()
+        return knowledge_response
+
+    chat_history = load_chat()
 
     for chat in chat_history[-10:]:
-        if user in chat['user']:
+        if user in chat["user"]:
             return chat["bot"]
 
     return ask_ai(user)
-        
-    
