@@ -27,6 +27,7 @@ def play_vedio(topic):
 
 def think(user):
     user = user.lower()
+    knowledge_response = None
 
     if user in ["hi", "hello", "hey"]:
         return "Hello! I am NovaCore."
